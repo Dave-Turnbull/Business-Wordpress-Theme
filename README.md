@@ -10,6 +10,10 @@ The staff custom post type includes a name, image and description.
 
 The download post type includes a file name and a source URL, adding this plugin creates a new section in the WordPress dashboard for creating new downloads.
 
+Custom menus are supported for the main navigation menu.
+
+The theme also includes some customisation options, such as adding taglines.
+
 ## Additional Info
 
 This theme utilises bootstrap, to intergrate bootstrap with wordpress [bootstrap nav-walker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker) has been included.
