@@ -1,6 +1,6 @@
 # Business Wordpress Theme
 
-This theme was originally a client's theme for their buisness page, sensitive information has been removed for public display. Some sections of the site may require re-working after said information had been removed.
+This theme was originally a client's theme for their buisness page, sensitive information has been removed for public display. If these files are intended for use in a new theme, some sections of the site may require re-working after said information had been removed.
 
 ## Usage
 
