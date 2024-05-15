@@ -1,0 +1,205 @@
+$white: #FFF;
+$facebook-blue: #3b5998;
+$twitter-blue: #00C6FF;
+
+$yellow: hsl(44, 82%, 57%);
+$blue: #6e9ccc;
+$orange: #c9512c;
+$amber: #dd8931;
+$green: #9dbd4b;
+
+h1, h2, h3, h4, h5, h6 {
+    color: $blue;
+}
+
+section {
+    background: $white;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    min-height: 100vh;
+}
+
+.header-section {
+    .header-outer { 
+        border-radius: 15px !important;
+    }
+    
+
+    .social-btns{
+        a {
+            text-decoration: none;
+        }
+
+        #btn-facebook {
+            color: $facebook-blue;
+            &:hover{
+                color: darken($facebook-blue, 10);
+            }
+        }
+        #btn-twitter{
+            color: $twitter-blue;
+            &:hover{
+                color: darken($twitter-blue, 10);
+            }
+        }
+    }
+}
+
+.content-section {
+    #nav {
+        @media (max-width: 991.98px) {
+            background: $yellow;
+            width: calc(100% - 30px);
+            border-radius: 15px 15px 0 0;
+        }
+
+        .navbar-toggler {
+            i {
+                color: $white;
+            }
+            
+            &:focus {
+                outline: none;
+                box-shadow: none !important;
+            }
+        }
+
+        .nav-item {
+            background: $yellow;
+            transition: all .5s;
+            position: relative;
+
+            @media (min-width: 992px) {
+                min-width: 130px;
+                min-height: 60px;
+                border-radius: 20px 20px 0 0;
+                margin-top: 15px;
+
+                &:hover{
+                    margin-top: 0;
+                    background: $orange;
+                }
+            } 
+
+            .dropdown-toggle::after{
+                vertical-align: 0.155em;
+            }
+
+            .nav-link{
+                color: $white;
+            }
+        }
+
+        .nav-item.active{
+            background: $orange;
+            @media(max-width: 991.98px) {
+                &:after{
+                    display: none;
+                }
+            }
+
+            &:after{
+                content: "";
+                transition: all .5s;
+                width: 26px;
+                height: 28px;
+                position: absolute;
+                top: -11px;
+                left: 3px;
+            }
+
+            &:hover{
+                &:after {
+                    top: -17px;
+                }
+            }
+        }
+
+        .dropdown-menu {
+            border: none;
+            border-radius: 0;
+            background: $orange;
+            @media (max-width: 991.98px) {
+                background: $yellow;
+            }
+
+            .dropdown-item {
+                color: $white;
+                &:hover{
+                    background: $yellow;
+                }
+            }
+        }
+
+    }
+
+    #content {
+        border-radius: 15px;
+        border: 8px solid $white;
+
+        .header-text {
+            border-bottom: 3px solid $blue;
+        }
+    }
+}
+
+#nav-container {
+    border-radius: 15px 15px 0 0 !important;
+    border: 8px solid $white;
+    border-bottom: none;
+
+    .nav-link {
+        color: $blue;
+        font-weight: bold;
+        &:hover{
+            color: darken($blue, 10);
+        }
+    }
+}
+
+#homepage {
+    #img-snow,
+    #front-view {
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
+#staff{
+    #staff-cards{
+        div {
+            border-radius: 15px;
+
+            img {
+                max-width: 150px;
+                width: 100%;
+                border-radius: 100%;
+                margin: 0 auto;
+                border: 4px solid $yellow;
+            }
+        }
+    }
+}
+
+
+.home-learning-files,
+#downloads .policies {
+    a {
+        padding: .5rem;
+        color: $white !important;
+        display: flex;
+        background: $yellow;
+        transition: all .5s;
+        margin-right: .25rem;
+        margin-bottom: .5rem;
+
+        &:hover{
+            background: $orange;
+        }
+
+        i, p {
+            display: inline-block;
+        }
+    }
+}

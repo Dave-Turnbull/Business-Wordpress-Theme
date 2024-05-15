@@ -1,0 +1,273 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #6e9ccc;
+}
+
+.fullpage {
+  background-color: #FFF;
+}
+
+.header-section .header-outer {
+  border-radius: 15px !important;
+}
+
+.header-section .social-btns a {
+  text-decoration: none;
+}
+
+.fullpage {
+  min-height: 100vh;
+}
+
+@media (max-width: 991.98px) {
+  .content-section #nav {
+    background: #ebbb37;
+    width: calc(100% - 30px);
+    border-radius: 15px 15px 0 0;
+  }
+}
+
+.content-section #nav .navbar-toggler i {
+  color: #FFF;
+}
+
+.content-section #nav .navbar-toggler:focus {
+  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.content-section #nav .nav-item {
+  background: #ebbb37;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  position: relative;
+}
+
+.content-section #nav ul {
+  width: 100%;
+  max-width: initial;
+}
+
+@media (min-width: 992px) {
+  .content-section #nav .nav-item {
+    min-width: 130px;
+    min-height: 60px;
+    border-radius: 20px 20px 0 0;
+    margin-top: 15px;
+  }
+  .content-section #nav .nav-item:hover {
+    margin-top: 0;
+    background: #c9512c;
+  }
+  .content-section #nav .dropdown-menu{
+    background: #c9512c;
+    border: none;
+  }
+  #nav .menu-item {
+    padding-top: 10px;
+  }
+}
+
+.content-section #nav .nav-item .dropdown-toggle::after {
+  vertical-align: 0.155em;
+}
+
+.content-section #nav .nav-item .nav-link {
+  color: #FFF;
+}
+
+.content-section #nav .nav-item.active {
+  background: #c9512c;
+}
+
+@media (max-width: 991.98px) {
+  .content-section #nav .nav-item.active:after {
+    display: none;
+  }
+  .content-section #nav .dropdown-menu{
+    background: #ebbb37;
+    border: none;
+  }
+}
+
+.content-section #nav .nav-item.active:after {
+  content: "";
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  width: 26px;
+  height: 28px;
+  position: absolute;
+  background: url("../images/butterfly.png") no-repeat;
+  top: -11px;
+  left: 3px;
+}
+
+.content-section #nav .nav-item.active:hover:after {
+  top: -17px;
+}
+
+.content-section #nav .dropdown-menu li{
+  border: none;
+  border-radius: 0;
+  background: #c9512c;
+  min-width: 130px;
+  min-height: 0px;
+  margin-top: 0px;
+}
+
+@media (max-width: 991.98px) {
+  .content-section #nav .dropdown-menu li{
+    background: #ebbb37;
+  }
+}
+
+.content-section #nav .dropdown-menu .dropdown-item {
+  color: #FFF;
+}
+
+.content-section #nav .dropdown-menu .dropdown-item:hover {
+  background: #ebbb37;
+}
+
+.content-section #content {
+  border-radius: 15px;
+  border: 8px solid #FFF;
+}
+
+.content-section #content .header-text {
+  border-bottom: 3px solid #6e9ccc;
+  padding-left: 0.1rem;
+}
+
+#nav-container {
+  border-radius: 15px 15px 0 0 !important;
+  border: 8px solid #FFF;
+  border-bottom: none;
+  background-image: url("/images/content-bg.png");
+  background-repeat: repeat-x;
+}
+
+#nav-container .nav-link {
+  color: #6e9ccc;
+  font-weight: bold;
+}
+
+#nav-container .nav-link:hover {
+  color: #4882bf;
+}
+
+#homepage #img-snow,
+#homepage #front-view {
+  max-width: 400px;
+  width: 100%;
+}
+
+#staff-cards div {
+  border-radius: 15px;
+}
+
+.staff-info {
+  height: 100%;
+}
+
+.downloads{
+  display: inline-block;
+}
+
+.is-style-fill a, .is-style-download-btn a,
+#downloads .downloads a {
+  background: #ebbb37;
+  color: #FFF !important;
+}
+
+.is-style-outline a {
+  border: 1px solid #ebbb37;
+  color: #ebbb37 !important;
+}
+.is-style-outline a:hover {
+  border: 1px solid #000000;
+  color: #000000 !important;
+}
+
+.is-style-download-btn a::before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f56d \00a0";
+  font-weight: 900;
+}
+
+.is-style-fill a, .is-style-outline a, .is-style-download-btn a,
+#downloads .downloads a {
+  padding: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  margin-right: .25rem;
+  margin-bottom: .5rem;
+  border-radius: 5px;
+}
+
+.is-style-fill a:hover, .is-style-download-btn a:hover, .is-style-outline a:hover,
+#downloads .downloads a:hover {
+  background: #c9512c;
+}
+
+.is-style-fill a i, .is-style-download-btn a i,
+#downloads .downloads a i,
+#downloads .downloads a p {
+  display: inline-block;
+}
+
+#staff-cards .archive-post-thumbnail-container{
+  max-width: 150px;
+  max-height: 150px;
+  overflow:hidden;
+  margin-left: auto;
+  margin-right: auto;
+	border: 4px solid #ebbb37;
+	border-radius: 75px;
+}
+
+#staff-cards .empty-archive-post-thumbnail-container{
+  background-color: #f0f0f0;
+  width: 150px;
+  height: 150px;
+  overflow:hidden;
+  margin-left: auto;
+  margin-right: auto;
+	border-radius: 75px;
+}
+
+#staff-cards .attachment-post-thumbnail{
+  object-fit: cover;
+}
+
+.wp-block-table td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+}
+
+#googlemap {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+#googlemap iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/*# sourceMappingURL=styles.css.map */
