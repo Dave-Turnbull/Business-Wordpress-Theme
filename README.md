@@ -12,7 +12,7 @@ The download post type includes a file name and a source URL, adding this plugin
 
 Custom menus are supported for the main navigation menu.
 
-The theme also includes some customisation options, such as adding taglines.
+The theme also includes options for the WordPress customizer, such as adding taglines.
 
 ## Additional Info
 
